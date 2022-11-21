@@ -1,0 +1,57 @@
+.count-container {
+  width: 300px;
+  height: 400px;
+  background-color:black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+button{
+    background-color: #aff535;
+    border: none;
+    outline: none;
+}
+button:active{
+    background-color:teal;
+}
+.increament{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+.decreament{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+h1{
+    font-size: 8rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.head{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top:5rem;
+    font-size: 1.8rem;
+    display: none;
+    transform: translateY(-150%);
+    transition: all ease 1s;
+}
+.head.active{
+    display: flex;
+    transform: translateY(0%);
+}
